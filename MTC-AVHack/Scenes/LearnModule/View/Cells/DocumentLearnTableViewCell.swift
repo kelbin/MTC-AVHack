@@ -10,8 +10,11 @@ import UIKit
 
 final class DocumentLearnTableViewCell: UITableViewCell {
 
+   
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,7 +23,20 @@ final class DocumentLearnTableViewCell: UITableViewCell {
     
     func config(_ model: DocumentLearnTableViewModel) {
         nameLabel.text = model.title
-        dateLabel.text = model.date
+        iconImageView.image = model.image
+        
+        if model.dateIsHidden {
+            
+            dateLabel.isHidden = true
+            dateLabel.text = ""
+            
+        } else {
+            
+            dateLabel.isHidden = false
+            dateLabel.text = model.date
+            nameLabel.font = model.font
+        }
+    
     }
     
 }
@@ -29,13 +45,19 @@ struct DocumentLearnTableViewModel: TableViewCellModel {
     
     let title: String
     let date: String
+    let image: UIImage
+    let dateIsHidden: Bool
+    let font: UIFont?
     
-    init(title: String, date: String) {
+    init(title: String, image: UIImage, date: String, dateIsHidden: Bool, font: UIFont?) {
         self.title = title
+        self.image = image
         self.date = date
+        self.dateIsHidden = dateIsHidden
+        self.font = font
     }
     
-    var cellHeight: CGFloat = UITableView.automaticDimension
+    var cellHeight: CGFloat = 46
     
     func cell(in tableView: UITableView) -> UITableViewCell {
         let cell: DocumentLearnTableViewCell = tableView.dequeueReusableCell()

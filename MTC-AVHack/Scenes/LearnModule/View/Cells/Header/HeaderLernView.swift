@@ -41,7 +41,7 @@ struct HeaderLearnViewModel: TableViewHeaderModel {
     
     func headerView(in tableView: UITableView) -> UITableViewHeaderFooterView {
         let view: HeaderLearnView = tableView.dequeueReusableHeaderView()
-        view.contentView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        view.contentView.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1)
         view.config(self)
         return view
     }

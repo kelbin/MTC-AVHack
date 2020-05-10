@@ -30,9 +30,8 @@ final class NewsViewController: UIViewController {
     }
     
     private func configViewController() {
-        
-        self.parent?.title = "Новости"
         navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "Новости"
     }
     
     private func configTableView() {

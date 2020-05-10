@@ -21,7 +21,7 @@ final class NewsDataProviderImp: NewsDataProvider {
         cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20))
         
         (0...10).forEach { (num) in
-            cells.append(NewsBlockTableViewModel(title: "МТС ЛОГО", date: "10 ноября 2018"))
+            cells.append(NewsBlockTableViewModel(title: "МТС ЛОГО", date: "10 ноября 2018", isShow: false))
             cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20))
         }
         
