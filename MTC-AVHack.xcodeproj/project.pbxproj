@@ -16,6 +16,11 @@
 		2D8438582467857B00D24881 /* TraineeDetailsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8438572467857B00D24881 /* TraineeDetailsViewCell.swift */; };
 		2D84385A2467858800D24881 /* TraineeDetailsViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8438592467858800D24881 /* TraineeDetailsViewCellModel.swift */; };
 		2D84385C2467859400D24881 /* TraineeDetailsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D84385B2467859400D24881 /* TraineeDetailsViewCell.xib */; };
+		2D8438622467F79C00D24881 /* MTSSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D84385D2467F79C00D24881 /* MTSSans-Medium.ttf */; };
+		2D8438632467F79C00D24881 /* MTSSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D84385E2467F79C00D24881 /* MTSSans-Black.ttf */; };
+		2D8438642467F79C00D24881 /* MTSSans-UltraWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D84385F2467F79C00D24881 /* MTSSans-UltraWide.ttf */; };
+		2D8438652467F79C00D24881 /* MTSSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8438602467F79C00D24881 /* MTSSans-Regular.ttf */; };
+		2D8438662467F79C00D24881 /* MTSSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D8438612467F79C00D24881 /* MTSSans-Bold.ttf */; };
 		4E0B07FE24666A2900660EDD /* HeaderLearnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0B07FD24666A2900660EDD /* HeaderLearnView.xib */; };
 		4E0B08002466729000660EDD /* HeaderLernView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B07FF2466729000660EDD /* HeaderLernView.swift */; };
 		4E0B080424667ECE00660EDD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0B080224667ECE00660EDD /* ProfileViewController.swift */; };
@@ -126,6 +131,11 @@
 		2D8438572467857B00D24881 /* TraineeDetailsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraineeDetailsViewCell.swift; sourceTree = "<group>"; };
 		2D8438592467858800D24881 /* TraineeDetailsViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraineeDetailsViewCellModel.swift; sourceTree = "<group>"; };
 		2D84385B2467859400D24881 /* TraineeDetailsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TraineeDetailsViewCell.xib; sourceTree = "<group>"; };
+		2D84385D2467F79C00D24881 /* MTSSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-Medium.ttf"; path = "../../../../../Downloads/MTSSans-Medium.ttf"; sourceTree = "<group>"; };
+		2D84385E2467F79C00D24881 /* MTSSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-Black.ttf"; path = "../../../../../Downloads/MTSSans-Black.ttf"; sourceTree = "<group>"; };
+		2D84385F2467F79C00D24881 /* MTSSans-UltraWide.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-UltraWide.ttf"; path = "../../../../../Downloads/MTSSans-UltraWide.ttf"; sourceTree = "<group>"; };
+		2D8438602467F79C00D24881 /* MTSSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-Regular.ttf"; path = "../../../../../Downloads/MTSSans-Regular.ttf"; sourceTree = "<group>"; };
+		2D8438612467F79C00D24881 /* MTSSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-Bold.ttf"; path = "../../../../../Downloads/MTSSans-Bold.ttf"; sourceTree = "<group>"; };
 		4E0B07FD24666A2900660EDD /* HeaderLearnView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderLearnView.xib; sourceTree = "<group>"; };
 		4E0B07FF2466729000660EDD /* HeaderLernView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLernView.swift; sourceTree = "<group>"; };
 		4E0B080224667ECE00660EDD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -461,6 +471,11 @@
 				4ED223132465C982001257D5 /* Assets.xcassets */,
 				4ED223152465C982001257D5 /* LaunchScreen.storyboard */,
 				4ED223182465C982001257D5 /* Info.plist */,
+				2D84385E2467F79C00D24881 /* MTSSans-Black.ttf */,
+				2D8438612467F79C00D24881 /* MTSSans-Bold.ttf */,
+				2D84385D2467F79C00D24881 /* MTSSans-Medium.ttf */,
+				2D8438602467F79C00D24881 /* MTSSans-Regular.ttf */,
+				2D84385F2467F79C00D24881 /* MTSSans-UltraWide.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -716,8 +731,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8438662467F79C00D24881 /* MTSSans-Bold.ttf in Resources */,
 				4ED223582466117B001257D5 /* TitleTableViewCell.xib in Resources */,
 				4ED223172465C982001257D5 /* LaunchScreen.storyboard in Resources */,
+				2D8438622467F79C00D24881 /* MTSSans-Medium.ttf in Resources */,
 				4ED223142465C982001257D5 /* Assets.xcassets in Resources */,
 				4ED2238824663E09001257D5 /* HeaderLearnTableViewCell.xib in Resources */,
 				4ED2234E246606AD001257D5 /* TextFieldTableViewCell.xib in Resources */,
@@ -727,6 +744,7 @@
 				4ED2236424661B0F001257D5 /* SpacesTableViewCell.xib in Resources */,
 				4E0B08392466AA5A00660EDD /* HeaderImageTableViewCell.xib in Resources */,
 				2D84385C2467859400D24881 /* TraineeDetailsViewCell.xib in Resources */,
+				2D8438632467F79C00D24881 /* MTSSans-Black.ttf in Resources */,
 				4ED2235C24661199001257D5 /* DescriptionTableViewCell.xib in Resources */,
 				4ED223712466383A001257D5 /* LearnViewController.xib in Resources */,
 				4E0B07FE24666A2900660EDD /* HeaderLearnView.xib in Resources */,
@@ -735,10 +753,12 @@
 				4E0B082224668A2500660EDD /* CircularProgressTableViewCell.xib in Resources */,
 				4ED22360246618E8001257D5 /* ButtonTableViewCell.xib in Resources */,
 				4ED223A324665290001257D5 /* NewsBlockTableViewCell.xib in Resources */,
+				2D8438652467F79C00D24881 /* MTSSans-Regular.ttf in Resources */,
 				4E0B081C246686D800660EDD /* TopCollectionTableViewCell.xib in Resources */,
 				4E0B080524667ECE00660EDD /* ProfileViewController.xib in Resources */,
 				2D84384A246725B500D24881 /* Devices.storyboard in Resources */,
 				4E0B08272466A45000660EDD /* DetailNewsViewController.xib in Resources */,
+				2D8438642467F79C00D24881 /* MTSSans-UltraWide.ttf in Resources */,
 				4E0B0817246680FE00660EDD /* HeaderProfileTableViewCell.xib in Resources */,
 				4ED223912466509D001257D5 /* NewsViewController.xib in Resources */,
 				2D8438552467704100D24881 /* TraineTableViewCell.xib in Resources */,
