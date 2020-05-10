@@ -17,7 +17,7 @@ enum LearnStates {
 }
 
 protocol LearnDataProvider: class {
-    func getCollectionData() -> [CollectionSection]
+    func getCollectionData(selected: TopCollectionViewCellModel?) -> [CollectionSection]
     func getTableData(state: LearnStates) -> [TableSection]
 }
 
@@ -72,18 +72,18 @@ final class LearnDataProviderImp: LearnDataProvider {
         return [TableSection(headerModel: header, cellModels: cells)]
     }
         
-    func getCollectionData() -> [CollectionSection] {
+    func getCollectionData(selected: TopCollectionViewCellModel?) -> [CollectionSection] {
         
         #warning("Добавить бек")
         var topCollectionCells: [CollectionViewCellModel] = []
         
         //        cells.append(FeedTopCollectionViewModel()
         
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Положения", isSelected: false, state: .provisions))
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Документы", isSelected: false, state: .document))
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Программы", isSelected: false, state: .programms))
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Обучение", isSelected: false, state: .learning))
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Кейсы", isSelected: false, state: .options))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Положения", isSelected: selected?.text=="Положения", state: .provisions))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Документы", isSelected: selected?.text=="Документы", state: .document))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Программы", isSelected: selected?.text=="Программы", state: .programms))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Обучение", isSelected: selected?.text=="Обучение", state: .learning))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Кейсы", isSelected: selected?.text=="Кейсы", state: .options))
         
         return [CollectionSection(headerModel: nil, cellModels: topCollectionCells)]
         

@@ -33,8 +33,9 @@ extension LearnPresenterImp: LearnPresenterInput {
             var model = model as? TopCollectionViewCellModel
             else { return }
         
+        //model.isSelected = true
         let tableModel = dataProvider.getTableData(state: model.state)
-        let collectionModel = dataProvider.getCollectionData()
+        let collectionModel = dataProvider.getCollectionData(selected: model)
         
         view.updateTableModel(model: tableModel)
         view.updateCollectionModel(model: collectionModel)
@@ -43,7 +44,7 @@ extension LearnPresenterImp: LearnPresenterInput {
     func viewDidLoad() {
         
         let tableModel = dataProvider.getTableData(state: .provisions)
-        let collectionModel = dataProvider.getCollectionData()
+        let collectionModel = dataProvider.getCollectionData(selected: nil)
         
         view.updateTableModel(model: tableModel)
         view.updateCollectionModel(model: collectionModel)
