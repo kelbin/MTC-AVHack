@@ -15,6 +15,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        //UILabel.appearance().font = UIFont(name: "yourFont", size: yourSize)
         
         let auth = AuthorizeAssembly.build()
         
@@ -57,7 +58,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 struct mockedUser {
     var fullname: String = "Богдарева Ирина Олеговна"
     var job: String = "Продуктовый дизайнер"
-    var isAdviser: Bool = true
+    var isAdviser: Bool = false
 }
 
 

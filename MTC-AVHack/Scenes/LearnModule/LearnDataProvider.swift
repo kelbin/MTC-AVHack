@@ -113,10 +113,10 @@ final class LearnDataProviderImp: LearnDataProvider {
         
         //        cells.append(FeedTopCollectionViewModel()
         
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Положения", isSelected: selected?.text=="Положения", state: .provisions))
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Документы", isSelected: selected?.text=="Документы", state: .document))
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Программы", isSelected: selected?.text=="Программы", state: .programms))
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Обучение", isSelected: selected?.text=="Обучение", state: .learning(isShow: false, index: 0)))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "pen"), text: "Положения", isSelected: selected?.text=="Положения", state: .provisions))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "docs"), text: "Документы", isSelected: selected?.text=="Документы", state: .document))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "comp"), text: "Программы", isSelected: selected?.text=="Программы", state: .programms))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "Shapka"), text: "Обучение", isSelected: selected?.text=="Обучение", state: .learning(isShow: false, index: 0)))
         
         return [CollectionSection(headerModel: nil, cellModels: topCollectionCells)]
         

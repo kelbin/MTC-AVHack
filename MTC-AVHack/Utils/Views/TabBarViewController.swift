@@ -23,14 +23,14 @@ final class TabBarViewController: UITabBarController {
         let auth2 = UINavigationController(rootViewController: LearnAssembly.build())
         let auth3 = UINavigationController(rootViewController: ProfileAssembly.build())
         let auth4 = UINavigationController(rootViewController: AuthorizeAssembly.build())
-        //let auth5 = UINavigationController(rootViewController: WriteUsAssembly.build())
+        let auth5 = UINavigationController(rootViewController: WriteUsAssembly.build())
         
         
         auth.tabBarItem = UITabBarItem(title: "Новости", image: #imageLiteral(resourceName: "newspaper 3"), selectedImage: nil)
         auth2.tabBarItem = UITabBarItem(title: "Обучение", image: #imageLiteral(resourceName: "study"), selectedImage: nil)
         auth3.tabBarItem = UITabBarItem(title: "Профиль", image: #imageLiteral(resourceName: "man 1"), selectedImage: nil)
         auth4.tabBarItem = UITabBarItem(title: "Еще", image: #imageLiteral(resourceName: "Group 28"), selectedImage: nil)
-        auth5.tabBarItem = UITabBarItem(title: "Спросить", image: #imageLiteral(resourceName: <#T##String#>), selectedImage: nil)
+        auth5.tabBarItem = UITabBarItem(title: "Спросить", image: #imageLiteral(resourceName: "Group 41"), selectedImage: nil)
 
         let tabBarList = [auth, auth2, auth5, auth3, auth4]
         

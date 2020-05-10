@@ -41,7 +41,7 @@ struct HeaderProfileTableViewModel: TableViewCellModel {
         self.achievmentCount = achievmentCount
     }
     
-    var cellHeight: CGFloat = 331
+    var cellHeight: CGFloat = 270
     
     func cell(in tableView: UITableView) -> UITableViewCell {
         let cell: HeaderProfileTableViewCell = tableView.dequeueReusableCell()

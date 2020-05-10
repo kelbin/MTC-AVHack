@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D969AD12468039300648821 /* MTSSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D969ACC2468039300648821 /* MTSSans-Black.ttf */; };
+		2D969AD22468039300648821 /* MTSSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D969ACD2468039300648821 /* MTSSans-Medium.ttf */; };
+		2D969AD32468039300648821 /* MTSSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D969ACE2468039300648821 /* MTSSans-Bold.ttf */; };
+		2D969AD42468039300648821 /* MTSSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D969ACF2468039300648821 /* MTSSans-Regular.ttf */; };
+		2D969AD52468039300648821 /* MTSSans-UltraWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D969AD02468039300648821 /* MTSSans-UltraWide.ttf */; };
 		4E8D786F2467FB9000853CF3 /* LearnService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D77CB2467FB9000853CF3 /* LearnService.swift */; };
 		4E8D78702467FB9000853CF3 /* LearnDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D77CC2467FB9000853CF3 /* LearnDataProvider.swift */; };
 		4E8D78712467FB9000853CF3 /* LearnInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D77CD2467FB9000853CF3 /* LearnInteractor.swift */; };
@@ -131,6 +136,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D969ACC2468039300648821 /* MTSSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-Black.ttf"; path = "../../../../../Downloads/MTSSans-Black.ttf"; sourceTree = "<group>"; };
+		2D969ACD2468039300648821 /* MTSSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-Medium.ttf"; path = "../../../../../Downloads/MTSSans-Medium.ttf"; sourceTree = "<group>"; };
+		2D969ACE2468039300648821 /* MTSSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-Bold.ttf"; path = "../../../../../Downloads/MTSSans-Bold.ttf"; sourceTree = "<group>"; };
+		2D969ACF2468039300648821 /* MTSSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-Regular.ttf"; path = "../../../../../Downloads/MTSSans-Regular.ttf"; sourceTree = "<group>"; };
+		2D969AD02468039300648821 /* MTSSans-UltraWide.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MTSSans-UltraWide.ttf"; path = "../../../../../Downloads/MTSSans-UltraWide.ttf"; sourceTree = "<group>"; };
 		4E8D77CB2467FB9000853CF3 /* LearnService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnService.swift; sourceTree = "<group>"; };
 		4E8D77CC2467FB9000853CF3 /* LearnDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnDataProvider.swift; sourceTree = "<group>"; };
 		4E8D77CD2467FB9000853CF3 /* LearnInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnInteractor.swift; sourceTree = "<group>"; };
@@ -661,6 +671,11 @@
 				4E8D78572467FB9000853CF3 /* Assets.xcassets */,
 				4E8D78582467FB9000853CF3 /* LaunchScreen.storyboard */,
 				4E8D785A2467FB9000853CF3 /* Info.plist */,
+				2D969ACC2468039300648821 /* MTSSans-Black.ttf */,
+				2D969ACE2468039300648821 /* MTSSans-Bold.ttf */,
+				2D969ACD2468039300648821 /* MTSSans-Medium.ttf */,
+				2D969ACF2468039300648821 /* MTSSans-Regular.ttf */,
+				2D969AD02468039300648821 /* MTSSans-UltraWide.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -815,22 +830,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E8D78942467FB9000853CF3 /* TraineeDetailsViewCell.xib in Resources */,
+				2D969AD42468039300648821 /* MTSSans-Regular.ttf in Resources */,
 				4E8D787E2467FB9000853CF3 /* TopCollectionViewCell.xib in Resources */,
 				4E8D78742467FB9000853CF3 /* AttachedTableViewCell.xib in Resources */,
 				4E8D789F2467FB9000853CF3 /* ProfileViewController.xib in Resources */,
 				4E8D78AA2467FB9000853CF3 /* ImageTableViewCell.xib in Resources */,
+				2D969AD22468039300648821 /* MTSSans-Medium.ttf in Resources */,
 				4E8D78A62467FB9000853CF3 /* DescriptionTableViewCell.xib in Resources */,
 				4E8D78C12467FB9000853CF3 /* NewDeviceDescriptionCell.xib in Resources */,
 				4E8D78802467FB9000853CF3 /* LearnViewController.xib in Resources */,
+				2D969AD52468039300648821 /* MTSSans-UltraWide.ttf in Resources */,
 				4E8D78AD2467FB9000853CF3 /* TextFieldTableViewCell.xib in Resources */,
 				4E8D78BF2467FB9000853CF3 /* HeaderImageTableViewCell.xib in Resources */,
 				4E8D78DF2467FB9000853CF3 /* SpacesTableViewCell.xib in Resources */,
 				4E8D78B12467FB9000853CF3 /* AuthorizeViewController.xib in Resources */,
 				4E8D78A82467FB9000853CF3 /* TitleTableViewCell.xib in Resources */,
 				4E8D78C32467FB9000853CF3 /* DetailNewsViewController.xib in Resources */,
+				2D969AD12468039300648821 /* MTSSans-Black.ttf in Resources */,
 				4E8D78C72467FB9000853CF3 /* NewsViewController.xib in Resources */,
 				4E8D78C62467FB9000853CF3 /* NewsBlockTableViewCell.xib in Resources */,
 				4E8D78992467FB9000853CF3 /* HeaderProfileTableViewCell.xib in Resources */,
+				2D969AD32468039300648821 /* MTSSans-Bold.ttf in Resources */,
 				4E8D78A72467FB9000853CF3 /* ButtonTableViewCell.xib in Resources */,
 				4E8D78972467FB9000853CF3 /* TraineTableViewCell.xib in Resources */,
 				4E8D78DB2467FB9000853CF3 /* LaunchScreen.storyboard in Resources */,

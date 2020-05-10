@@ -27,23 +27,28 @@ final class TopCollectionViewCell: UICollectionViewCell {
         self.contentView.layer.borderWidth = 1
     }
     
-    override var isSelected: Bool {
-         didSet {
-            self.backgroundColor = .red
+    //override var isSelected: Bool {
+         //didSet {
+            //self.backgroundColor = .red
              //self.imageView.alpha = isSelected ? 0.75 : 1.0
             
-         }
-       }
+         //}
+       //}
     
     func config(_ model: TopCollectionViewCellModel) {
         
         nameLabel.text = model.text
+        logoImageView.image = model.image.withRenderingMode(.alwaysTemplate)
         
         switch model.isSelected {
         case true:
             contentView.backgroundColor = .red
+            logoImageView.tintColor = .white
+            nameLabel.textColor = .white
         case false:
             contentView.backgroundColor = .white
+            logoImageView.tintColor = .black
+            nameLabel.textColor = .black
         default:
             break
         }
