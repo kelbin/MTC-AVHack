@@ -51,10 +51,10 @@ final class AdviserProfileDataProviderImp: ProfileDataProvider {
 
         cells.append(HeaderProfileTableViewModel(fio: globalUser.fullname, avatar: "", job: globalUser.job, achievmentCount: ""))
         
-        cells.append(TraineeTableViewCellModel(fullName: "Саркисова Татьяна Максимовна", job: "Младший дизайнер", rounded: false))
+        cells.append(TraineeTableViewCellModel(fullName: "Саркисова Татьяна Максимовна", job: "Младший дизайнер", rounded: false, cellSelectedAction: action))
         cells.append(TraineeDetailsViewCellModel())
         cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 11))
-        cells.append(TraineeTableViewCellModel(fullName: "Виноградова Ольга Владимировна", job: "Младший дизайнер", rounded: true))
+        cells.append(TraineeTableViewCellModel(fullName: "Виноградова Ольга Владимировна", job: "Младший дизайнер", rounded: true, cellSelectedAction: action))
         //cells.append(TraineeTableViewCellModel(fullName: "Баженова Наталья Игоревича", job: "Промышленный дизайнер"))
         
         //cells.append(TopCollectionTableViewModel(sectionsModel: topCollection))
@@ -64,5 +64,10 @@ final class AdviserProfileDataProviderImp: ProfileDataProvider {
         cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20))
         
         return [TableSection(headerModel: nil, cellModels: cells)]
+    }
+    
+    func action() {
+        
+        
     }
 }
