@@ -32,6 +32,7 @@ final class LearnViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
+        Coordinator.viewController = self
         configCollectionView()
         configViewController()
         presenter.viewDidLoad()
@@ -48,6 +49,7 @@ final class LearnViewController: UIViewController {
         
         dataSourceTableView.collection = tableView
         dataSourceTableView.actionDelegate = presenter
+        dataSourceTableView.tapDelegate = presenter
         
         let nib = UINib(nibName: HeaderLearnView.reuseIdentifier, bundle: nil)
         tableView.register(nib, forHeaderFooterViewReuseIdentifier: HeaderLearnView.reuseIdentifier)

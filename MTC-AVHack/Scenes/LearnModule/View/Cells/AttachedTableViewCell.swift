@@ -8,8 +8,14 @@
 
 import UIKit
 
-final class AttachedTableViewCell: UITableViewCell {
+protocol AttachedTableViewCellDelegate: class {
+    func didTap()
+}
 
+
+final class AttachedTableViewCell: UITableViewCell, DataSourceTapDelegate {
+    
+    weak var delegate: AnyObject?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +29,7 @@ final class AttachedTableViewCell: UITableViewCell {
     }
     
     @IBAction func tapToStartTesting(_ sender: Any) {
-        
+        Coordinator.tap()
     }
     
     func config(_ model: AttachedTableViewModel) {

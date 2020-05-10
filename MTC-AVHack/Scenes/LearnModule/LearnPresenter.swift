@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol LearnPresenterInput: ViewState, DataSourceCollectionActionDelegate, DataSourceActionDelegate {
+protocol LearnPresenterInput: ViewState, DataSourceCollectionActionDelegate, DataSourceActionDelegate, ButtonTapDelegate {
     
 }
 
@@ -27,13 +27,17 @@ final class LearnPresenterImp {
 
 
 extension LearnPresenterImp: LearnPresenterInput {
+    
+    func didTap() {
+        router?.goToNextScreen()
+    }
+    
    
     func didTapCollection<T>(with model: T) {
         guard model is TopCollectionViewCellModel,
             let model = model as? TopCollectionViewCellModel
             else { return }
-        
-        //model.isSelected = true
+    
         let tableModel = dataProvider.getTableData(state: model.state)
         let collectionModel = dataProvider.getCollectionData(selected: model)
         

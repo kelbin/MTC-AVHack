@@ -1,35 +1,35 @@
 //
-//  LearnRouter.swift
+//  TestingRouter.swift
 //  MTC-AVHack
 //
-//  Created by Максим Савченко on 09/05/2020.
+//  Created by Максим Савченко on 10/05/2020.
 //  Copyright © 2020 Максим Савченко. All rights reserved.
 //
 
 import UIKit
 
-protocol LearnRouter {
+protocol TestingRouter {
     func goToNextScreen()
 }
 
-final class LearnRouterImp {
+final class TestingRouterImp {
     
-    unowned var viewController: LearnViewController!
+    unowned var viewController: TestingViewController!
     
     var routerTransition: CustomTransitionRouter?
     
-    init(viewController: LearnViewController) {
+    init(viewController: TestingViewController) {
         self.viewController = viewController
     }
 }
 
-extension LearnRouterImp: LearnRouter {
+extension TestingRouterImp: TestingRouter {
     
     func goToNextScreen() {
         
         routerTransition = CustomTransitionRouter(viewController: viewController)
         
-        let navigation = TestingAssembly.build()
+        let navigation = UINavigationController(rootViewController: TabBarViewController())
         
         navigation.transitioningDelegate = routerTransition
         
