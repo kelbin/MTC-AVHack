@@ -18,12 +18,13 @@ final class HeaderProfileTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-    }
-    
-    func config(_ model: HeaderProfileTableViewModel) {
         
     }
     
+    func config(_ model: HeaderProfileTableViewModel) {
+        achievmentButton.setTitle(globalUser.isAdviser ? "Стажеров на кураторстве: 2" : "Достижений получено: 2", for: .normal)
+        
+    }
 }
 
 struct HeaderProfileTableViewModel: TableViewCellModel {
