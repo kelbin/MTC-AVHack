@@ -11,6 +11,7 @@ import UIKit
 final class NewsBlockTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,8 +19,7 @@ final class NewsBlockTableViewCell: UITableViewCell {
     }
     
     func config(_ model: NewsBlockTableViewModel) {
-        
-        
+        nameLabel.text = model.title
     }
 }
 
@@ -27,10 +27,12 @@ struct NewsBlockTableViewModel: TableViewCellModel {
     
     let title: String
     let date: String
+    var isShow: Bool
     
-    init(title: String, date: String) {
+    init(title: String, date: String, isShow: Bool) {
         self.title = title
         self.date = date
+        self.isShow = isShow
     }
     
     var cellHeight: CGFloat = 209

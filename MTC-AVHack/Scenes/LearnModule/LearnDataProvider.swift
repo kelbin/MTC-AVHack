@@ -12,8 +12,7 @@ enum LearnStates {
     case provisions
     case document
     case programms
-    case learning
-    case options
+    case learning(isShow: Bool, index: Int)
 }
 
 protocol LearnDataProvider: class {
@@ -65,15 +64,38 @@ final class LearnDataProviderImp: LearnDataProvider {
             cells = programmsArray
             
             
-        case .learning:
+        case .learning(let isShow, let index):
             
             header = HeaderLearnViewModel(title: "Обучение")
             
             cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20))
             
-            (0...10).forEach { num in
-                cells.append(NewsBlockTableViewModel(title: "Brbrbr", date: "10 ноября 2020"))
-                cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20))
+            cells = learningArray
+            
+            cells.insert(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20), at: 0)
+            cells.insert(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20), at: 2)
+            cells.insert(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20), at: 4)
+            cells.insert(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20), at: 6)
+            
+            switch isShow {
+                
+            case true:
+                
+                var array: [TableViewCellModel] = []
+                
+                learningArray.enumerated().forEach { (offset, object) in
+                    if offset == index {
+                        array.append(object)
+                    }
+                }
+                
+                array.append(AttachedTableViewModel())
+                
+                array.insert(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 20), at: 1)
+                
+                cells = array
+            default:
+                break
             }
             
         default:
@@ -92,8 +114,7 @@ final class LearnDataProviderImp: LearnDataProvider {
         topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Положения", isSelected: false, state: .provisions))
         topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Документы", isSelected: false, state: .document))
         topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Программы", isSelected: false, state: .programms))
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Обучение", isSelected: false, state: .learning))
-        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Кейсы", isSelected: false, state: .options))
+        topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Обучение", isSelected: false, state: .learning(isShow: false, index: 0)))
         
         return [CollectionSection(headerModel: nil, cellModels: topCollectionCells)]
         
@@ -104,4 +125,10 @@ final class LearnDataProviderImp: LearnDataProvider {
 var programmsArray: [ProgrammsTableViewModel] = [
     ProgrammsTableViewModel(title: "Sketch", image: #imageLiteral(resourceName: "sketch"), isOpen: true),
     ProgrammsTableViewModel(title: "Miro", image: #imageLiteral(resourceName: "miror"), isOpen: false)
+]
+
+var learningArray: [NewsBlockTableViewModel] = [
+    NewsBlockTableViewModel(title: "Первый", date: "10 ноября 2020", isShow: false),
+    NewsBlockTableViewModel(title: "Второй", date: "12 ноября 2020", isShow: false),
+    NewsBlockTableViewModel(title: "Третий", date: "13 ноября 2020", isShow: false)
 ]

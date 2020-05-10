@@ -55,6 +55,7 @@ final class LearnViewController: UIViewController {
         tableView.register(cellType: NewsBlockTableViewCell.self)
         tableView.register(cellType: SpacesTableViewCell.self)
         tableView.register(cellType: ProgrammsTableViewCell.self)
+        tableView.register(cellType: AttachedTableViewCell.self)
     }
     
     private func configCollectionView() {
