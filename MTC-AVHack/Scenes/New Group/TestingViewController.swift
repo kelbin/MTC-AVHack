@@ -30,8 +30,7 @@ final class TestingViewController: UIViewController {
     }
     
     private func configViewController() {
-        navigationController?.navigationBar.prefersLargeTitles = true
-        self.title = "Новости"
+        self.title = "Тестирование"
     }
     
     private func configTableView() {
@@ -42,8 +41,8 @@ final class TestingViewController: UIViewController {
         dataSourceTableView.collection = tableView
         dataSourceTableView.tapDelegate = presenter
         
-        tableView.register(cellType: NewsBlockTableViewCell.self)
-        tableView.register(cellType: SpacesTableViewCell.self)
+        tableView.register(cellType: FirstPageTableViewCell.self)
+        tableView.register(cellType: SecondPageTableViewCell.self)
     }
     
 }

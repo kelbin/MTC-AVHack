@@ -29,7 +29,7 @@ extension LearnRouterImp: LearnRouter {
         
         routerTransition = CustomTransitionRouter(viewController: viewController)
         
-        let navigation = UINavigationController(rootViewController: TabBarViewController())
+        let navigation = TestingAssembly.build()
         
         navigation.transitioningDelegate = routerTransition
         

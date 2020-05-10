@@ -138,8 +138,6 @@
 		4E8D78F92467FEDC00853CF3 /* FirstPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8D78F72467FEDC00853CF3 /* FirstPageTableViewCell.xib */; };
 		4E8D78FC2467FEED00853CF3 /* SecondPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78FA2467FEED00853CF3 /* SecondPageTableViewCell.swift */; };
 		4E8D78FD2467FEED00853CF3 /* SecondPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8D78FB2467FEED00853CF3 /* SecondPageTableViewCell.xib */; };
-		4E8D79002467FEFC00853CF3 /* ThirdPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78FE2467FEFC00853CF3 /* ThirdPageTableViewCell.swift */; };
-		4E8D79012467FEFC00853CF3 /* ThirdPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8D78FF2467FEFC00853CF3 /* ThirdPageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -275,8 +273,6 @@
 		4E8D78F72467FEDC00853CF3 /* FirstPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPageTableViewCell.xib; sourceTree = "<group>"; };
 		4E8D78FA2467FEED00853CF3 /* SecondPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageTableViewCell.swift; sourceTree = "<group>"; };
 		4E8D78FB2467FEED00853CF3 /* SecondPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPageTableViewCell.xib; sourceTree = "<group>"; };
-		4E8D78FE2467FEFC00853CF3 /* ThirdPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageTableViewCell.swift; sourceTree = "<group>"; };
-		4E8D78FF2467FEFC00853CF3 /* ThirdPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdPageTableViewCell.xib; sourceTree = "<group>"; };
 		4ED223092465C980001257D5 /* MTC-AVHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTC-AVHack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -544,18 +540,13 @@
 		4E8D78232467FB9000853CF3 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				4E8D7902246806C100853CF3 /* Cells */,
 				4E8D78E92467FD6700853CF3 /* TestingViewController.swift */,
 				4E8D78EA2467FD6700853CF3 /* TestingViewController.xib */,
 				4E8D78EE2467FD8F00853CF3 /* TestingPresenter.swift */,
 				4E8D78F02467FD9E00853CF3 /* TestingDataProvider.swift */,
 				4E8D78F22467FDAA00853CF3 /* TestingAssembly.swift */,
 				4E8D78F42467FDBB00853CF3 /* TestingRouter.swift */,
-				4E8D78F62467FEDC00853CF3 /* FirstPageTableViewCell.swift */,
-				4E8D78F72467FEDC00853CF3 /* FirstPageTableViewCell.xib */,
-				4E8D78FA2467FEED00853CF3 /* SecondPageTableViewCell.swift */,
-				4E8D78FB2467FEED00853CF3 /* SecondPageTableViewCell.xib */,
-				4E8D78FE2467FEFC00853CF3 /* ThirdPageTableViewCell.swift */,
-				4E8D78FF2467FEFC00853CF3 /* ThirdPageTableViewCell.xib */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -776,6 +767,17 @@
 			path = CirclerFilled;
 			sourceTree = "<group>";
 		};
+		4E8D7902246806C100853CF3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E8D78F62467FEDC00853CF3 /* FirstPageTableViewCell.swift */,
+				4E8D78F72467FEDC00853CF3 /* FirstPageTableViewCell.xib */,
+				4E8D78FA2467FEED00853CF3 /* SecondPageTableViewCell.swift */,
+				4E8D78FB2467FEED00853CF3 /* SecondPageTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		4ED223002465C980001257D5 = {
 			isa = PBXGroup;
 			children = (
@@ -878,7 +880,6 @@
 				4E8D78762467FB9000853CF3 /* ProgrammsTableViewCell.xib in Resources */,
 				4E8D78752467FB9000853CF3 /* DocumentLearnTableViewCell.xib in Resources */,
 				4E8D78892467FB9000853CF3 /* WriteUsViewController.xib in Resources */,
-				4E8D79012467FEFC00853CF3 /* ThirdPageTableViewCell.xib in Resources */,
 				4E8D787B2467FB9000853CF3 /* HeaderLearnTableViewCell.xib in Resources */,
 				4E8D787D2467FB9000853CF3 /* HeaderLearnView.xib in Resources */,
 				4E8D789B2467FB9000853CF3 /* TopCollectionTableViewCell.xib in Resources */,
@@ -946,7 +947,6 @@
 				4E8D787A2467FB9000853CF3 /* HeaderLernView.swift in Sources */,
 				4E8D78832467FB9000853CF3 /* WriteUsDataProvider.swift in Sources */,
 				4E8D78812467FB9000853CF3 /* LearnViewController.swift in Sources */,
-				4E8D79002467FEFC00853CF3 /* ThirdPageTableViewCell.swift in Sources */,
 				4E8D78AF2467FB9000853CF3 /* ButtonTableViewCell.swift in Sources */,
 				4E8D78D12467FB9000853CF3 /* SessionStorage.swift in Sources */,
 				4E8D78BA2467FB9000853CF3 /* DetailNewsPresenter.swift in Sources */,

@@ -15,6 +15,8 @@ protocol TestingPresenterInput: ViewState, ButtonTapDelegate {
 
 final class TestingPresenterImp {
     
+    let isWinner: Bool = false
+    
     unowned var view: TestingViewInput!
     
     var router: TestingRouter!
@@ -27,13 +29,13 @@ final class TestingPresenterImp {
 extension TestingPresenterImp: TestingPresenterInput {
     
     func didTap() {
-        router?.goToNextScreen()
+        let model = dataProvider.getData(state: .result(isWinner: isWinner))
+        view.updateTableModel(model: model)
     }
     
     func viewDidLoad() {
         
-        let tableModel = dataProvider.getData()
-        
+        let tableModel = dataProvider.getData(state: .start)
         view.updateTableModel(model: tableModel)
         
     }

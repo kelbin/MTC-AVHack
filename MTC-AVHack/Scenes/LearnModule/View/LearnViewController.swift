@@ -48,6 +48,7 @@ final class LearnViewController: UIViewController {
         
         dataSourceTableView.collection = tableView
         dataSourceTableView.actionDelegate = presenter
+        dataSourceTableView.tapDelegate = presenter
         
         let nib = UINib(nibName: HeaderLearnView.reuseIdentifier, bundle: nil)
         tableView.register(nib, forHeaderFooterViewReuseIdentifier: HeaderLearnView.reuseIdentifier)
