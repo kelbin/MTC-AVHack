@@ -46,7 +46,9 @@ extension UITableView {
     
     func reloadData(with animation: AnimationOptions) {
         
-        
+        UIView.transition(with: self, duration: 0.3, options: animation, animations: {
+            self.reloadData()
+        }, completion: nil)
         
     }
     
