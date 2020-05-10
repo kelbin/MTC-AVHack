@@ -12,45 +12,71 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="KGk-i7-Jjw" customClass="DocumentLearnTableViewCell" customModule="MTC_AVHack" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="46" id="KGk-i7-Jjw" customClass="DocumentLearnTableViewCell" customModule="MTC_AVHack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приказ о зачислении на службу" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgA-cK-tvD">
-                        <rect key="frame" x="16" y="12" width="202" height="21"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3Y-iY-2Tj">
+                        <rect key="frame" x="10" y="0.0" width="300" height="45.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ценности компании МТС" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7h-kl-Cdp">
+                                <rect key="frame" x="39" y="11.5" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hMx-xf-lQ4">
+                                <rect key="frame" x="8" y="11" width="23" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="A3V-Er-p0N"/>
+                                    <constraint firstAttribute="height" constant="23" id="jHS-ks-9Gm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10.08.2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ol-ud-gPM">
+                                <rect key="frame" x="271" y="11" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="202" id="0Tx-67-R5p"/>
+                            <constraint firstItem="h7h-kl-Cdp" firstAttribute="centerY" secondItem="M3Y-iY-2Tj" secondAttribute="centerY" constant="-0.75" id="0TJ-iK-m4Q"/>
+                            <constraint firstAttribute="bottom" secondItem="9ol-ud-gPM" secondAttribute="bottom" constant="13.5" id="4dj-Rx-cjP"/>
+                            <constraint firstItem="hMx-xf-lQ4" firstAttribute="top" secondItem="M3Y-iY-2Tj" secondAttribute="top" constant="11" id="C8s-oE-6ru"/>
+                            <constraint firstAttribute="trailing" secondItem="9ol-ud-gPM" secondAttribute="trailing" constant="8" id="WEH-Gu-a7O"/>
+                            <constraint firstItem="9ol-ud-gPM" firstAttribute="top" secondItem="M3Y-iY-2Tj" secondAttribute="top" constant="11" id="WOo-to-adF"/>
+                            <constraint firstItem="hMx-xf-lQ4" firstAttribute="centerY" secondItem="M3Y-iY-2Tj" secondAttribute="centerY" id="eeh-yQ-QsW"/>
+                            <constraint firstItem="h7h-kl-Cdp" firstAttribute="centerY" secondItem="M3Y-iY-2Tj" secondAttribute="centerY" constant="-0.75" id="gax-yZ-mx7"/>
+                            <constraint firstItem="h7h-kl-Cdp" firstAttribute="leading" secondItem="hMx-xf-lQ4" secondAttribute="trailing" constant="8" id="hfD-QG-R1N"/>
+                            <constraint firstItem="hMx-xf-lQ4" firstAttribute="leading" secondItem="M3Y-iY-2Tj" secondAttribute="leading" constant="8" id="kLM-6E-f6C"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10.05.2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpK-ox-avf">
-                        <rect key="frame" x="236" y="12" width="77" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="11"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="gpK-ox-avf" secondAttribute="trailing" constant="7" id="0hi-Ug-kBK"/>
-                    <constraint firstItem="gpK-ox-avf" firstAttribute="leading" secondItem="cgA-cK-tvD" secondAttribute="trailing" constant="18" id="AC7-vn-NrW"/>
-                    <constraint firstItem="cgA-cK-tvD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Shc-gP-fZk"/>
-                    <constraint firstItem="cgA-cK-tvD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="azC-Xz-Txv"/>
-                    <constraint firstItem="gpK-ox-avf" firstAttribute="top" secondItem="cgA-cK-tvD" secondAttribute="top" id="d7k-9J-glE"/>
-                    <constraint firstAttribute="bottom" secondItem="cgA-cK-tvD" secondAttribute="bottom" constant="10.5" id="etg-hK-Gbg"/>
+                    <constraint firstItem="M3Y-iY-2Tj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gxs-ij-mR1"/>
+                    <constraint firstAttribute="trailing" secondItem="M3Y-iY-2Tj" secondAttribute="trailing" constant="10" id="U4R-z9-rme"/>
+                    <constraint firstAttribute="bottom" secondItem="M3Y-iY-2Tj" secondAttribute="bottom" id="VfW-Q7-yRd"/>
+                    <constraint firstItem="M3Y-iY-2Tj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iL1-zm-TPv"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="dateLabel" destination="gpK-ox-avf" id="orw-95-KtP"/>
-                <outlet property="nameLabel" destination="cgA-cK-tvD" id="9aR-1P-bUb"/>
+                <outlet property="dateLabel" destination="9ol-ud-gPM" id="F6R-uf-q6h"/>
+                <outlet property="iconImageView" destination="hMx-xf-lQ4" id="CiK-J7-U9p"/>
+                <outlet property="nameLabel" destination="h7h-kl-Cdp" id="Ziq-f9-4eR"/>
             </connections>
-            <point key="canvasLocation" x="143.47826086956522" y="65.625"/>
+            <point key="canvasLocation" x="143.47826086956522" y="48.214285714285715"/>
         </tableViewCell>
     </objects>
 </document>

@@ -18,7 +18,7 @@ final class DetailNewsDataProviderImp: DetailNewsDataProvider {
     func getData() -> [TableSection] {
         
         var cells: [TableViewCellModel] = []
-//        
+        
 //        cells.append()
 //        cells.append()
         

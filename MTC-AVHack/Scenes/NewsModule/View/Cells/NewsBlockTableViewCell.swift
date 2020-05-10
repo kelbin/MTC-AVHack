@@ -10,20 +10,16 @@ import UIKit
 
 final class NewsBlockTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        bottomView.layer.addBorder(edge: .top, color: UIColor.lightText, thickness: 1)
     }
     
     func config(_ model: NewsBlockTableViewModel) {
-        
-        
+        nameLabel.text = model.title
     }
 }
 
@@ -31,10 +27,12 @@ struct NewsBlockTableViewModel: TableViewCellModel {
     
     let title: String
     let date: String
+    var isShow: Bool
     
-    init(title: String, date: String) {
+    init(title: String, date: String, isShow: Bool) {
         self.title = title
         self.date = date
+        self.isShow = isShow
     }
     
     var cellHeight: CGFloat = 209

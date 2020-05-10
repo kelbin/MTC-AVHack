@@ -25,7 +25,7 @@ protocol DataSource {
 }
 
 protocol DataSourceCollectionActionDelegate: class {
-    func didTap<T>(with model: T)
+    func didTapCollection<T>(with model: T)
 }
 
 protocol DataSourceActionDelegate: class {
@@ -122,7 +122,7 @@ extension DataSourceCollectionView: DataSource {
 extension DataSourceCollectionView: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        actionDelegate?.didTap(with: sectionModels[indexPath.section].cellModels[indexPath.row])
+        actionDelegate?.didTapCollection(with: sectionModels[indexPath.section].cellModels[indexPath.row])
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

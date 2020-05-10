@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol LearnPresenterInput: ViewState, DataSourceCollectionActionDelegate {
+protocol LearnPresenterInput: ViewState, DataSourceCollectionActionDelegate, DataSourceActionDelegate {
     
 }
 
@@ -28,9 +28,9 @@ final class LearnPresenterImp {
 
 extension LearnPresenterImp: LearnPresenterInput {
    
-    func didTap<T>(with model: T) {
+    func didTapCollection<T>(with model: T) {
         guard model is TopCollectionViewCellModel,
-            var model = model as? TopCollectionViewCellModel
+            let model = model as? TopCollectionViewCellModel
             else { return }
         
         //model.isSelected = true
@@ -41,6 +41,37 @@ extension LearnPresenterImp: LearnPresenterInput {
         view.updateCollectionModel(model: collectionModel)
     }
     
+    func didTap<T>(with model: T) {
+        
+        switch model {
+        case is ProgrammsTableViewModel:
+            guard let model = model as? ProgrammsTableViewModel else { return }
+            
+            let index = programmsArray.firstIndex(where: { $0.title == model.title }) ?? 0
+            
+            programmsArray[index].isOpen = programmsArray[index].isOpen ? false : true
+            
+            let tableModel = dataProvider.getTableData(state: .programms)
+            
+            view.updateRow(model: tableModel, index: index, isOpen: programmsArray[index].isOpen)
+            
+        case is NewsBlockTableViewModel:
+            
+            guard let model = model as? NewsBlockTableViewModel else { return }
+            
+            let index = learningArray.firstIndex(where: { $0.title == model.title }) ?? 0
+            
+            learningArray[index].isShow = learningArray[index].isShow ? false : true
+            
+            let tableModel = dataProvider.getTableData(state: .learning(isShow: learningArray[index].isShow, index: index))
+            
+            view.updateTableModel(model: tableModel)
+        default:
+            break
+        }
+        
+    }
+    
     func viewDidLoad() {
         
         let tableModel = dataProvider.getTableData(state: .provisions)
@@ -49,5 +80,6 @@ extension LearnPresenterImp: LearnPresenterInput {
         view.updateTableModel(model: tableModel)
         view.updateCollectionModel(model: collectionModel)
     }
+    
     
 }
