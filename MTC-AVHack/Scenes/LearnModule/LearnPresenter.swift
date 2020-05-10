@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol LearnPresenterInput: ViewState, DataSourceCollectionActionDelegate {
+protocol LearnPresenterInput: ViewState, DataSourceCollectionActionDelegate, DataSourceActionDelegate {
     
 }
 
@@ -28,9 +28,9 @@ final class LearnPresenterImp {
 
 extension LearnPresenterImp: LearnPresenterInput {
    
-    func didTap<T>(with model: T) {
+    func didTapCollection<T>(with model: T) {
         guard model is TopCollectionViewCellModel,
-            var model = model as? TopCollectionViewCellModel
+            let model = model as? TopCollectionViewCellModel
             else { return }
         
         let tableModel = dataProvider.getTableData(state: model.state)
@@ -38,6 +38,20 @@ extension LearnPresenterImp: LearnPresenterInput {
         
         view.updateTableModel(model: tableModel)
         view.updateCollectionModel(model: collectionModel)
+    }
+    
+    func didTap<T>(with model: T) {
+        guard model is ProgrammsTableViewModel,
+            let model = model as? ProgrammsTableViewModel
+            else { return }
+        
+        let index = programmsArray.firstIndex(where: { $0.title == model.title }) ?? 0
+        
+        programmsArray[index].isOpen = programmsArray[index].isOpen ? false : true
+        
+        let tableModel = dataProvider.getTableData(state: .programms)
+        
+        view.updateRow(model: tableModel, index: index, isOpen: programmsArray[index].isOpen)
     }
     
     func viewDidLoad() {
@@ -48,5 +62,6 @@ extension LearnPresenterImp: LearnPresenterInput {
         view.updateTableModel(model: tableModel)
         view.updateCollectionModel(model: collectionModel)
     }
+    
     
 }

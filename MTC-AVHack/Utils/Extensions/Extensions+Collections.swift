@@ -46,10 +46,40 @@ extension UITableView {
     
     func reloadData(with animation: AnimationOptions) {
         
-        UIView.animate(withDuration: 0.2, delay: 0, options: animation, animations: {
-            self.reloadData()
-        }, completion: nil)
         
+        
+    }
+    
+    func toTop() {
+        
+        let transition = CATransition()
+        transition.type = CATransitionType.moveIn
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.fillMode = CAMediaTimingFillMode.forwards
+        transition.duration = 0.5
+        transition.subtype = CATransitionSubtype.fromBottom
+        self.layer.add(transition, forKey: "UITableViewReloadDataAnimationKey")
+        self.reloadData()
+        
+    }
+    
+    func toBottom() {
+        
+        let transition = CATransition()
+        transition.type = CATransitionType.moveIn
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.fillMode = CAMediaTimingFillMode.forwards
+        transition.duration = 0.5
+        transition.subtype = CATransitionSubtype.fromTop
+        self.layer.add(transition, forKey: "UITableViewReloadDataAnimationKey")
+        self.reloadData()
+        
+    }
+    
+    func reloadData(with animation: AnimationOptions, indexPath: [IndexPath]) {
+        UIView.animate(withDuration: 0.3, delay: 0, options: animation, animations: {
+            self.reloadRows(at: indexPath, with: .none)
+        }, completion: nil)
     }
     
 }

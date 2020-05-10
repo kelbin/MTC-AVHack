@@ -6,7 +6,7 @@
 //  Copyright © 2020 Максим Савченко. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum LearnStates {
     case provisions
@@ -31,27 +31,39 @@ final class LearnDataProviderImp: LearnDataProvider {
         switch state {
         case .provisions:
             
-            header = HeaderLearnViewModel(title: "Общие Положения", dateIsHidden: true)
+            header = HeaderLearnViewModel(title: "Общие Положения")
             
-            (0...10).forEach { num in
-                cells.append(DocumentLearnTableViewModel(title: "Условия цапупкукит  птумпцупуки vvvevregerbrbrbbrebrrbbrbav", date: "10.05.2018"))
+            cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 10))
+            
+            (0...5).forEach { num in
+                cells.append(DocumentLearnTableViewModel(title: "Ценности компании МТС",
+                                                         image: #imageLiteral(resourceName: "important"),
+                                                         date: "",
+                                                         dateIsHidden: true,
+                                                         font: nil))
+                cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 10))
                 
             }
         case .document:
             
             header = HeaderLearnViewModel(title: "Документы")
             
-            (0...10).forEach { num in
-                cells.append(DocumentLearnTableViewModel(title: "Условия цапупкукит птумпцупуки vvvevregerbrbrbbrebrrbbrbav", date: "10.05.2018"))
+            cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 10))
+            
+            (0...5).forEach { num in
+                cells.append(DocumentLearnTableViewModel(title: "Договор о найме",
+                                                         image: #imageLiteral(resourceName: "important"), date: "10.07.2020",
+                                                         dateIsHidden: false,
+                                                         font: UIFont.systemFont(ofSize: 14)))
+                cells.append(SpacesTableViewModel(color: #colorLiteral(red: 0.9490196078, green: 0.9529411765, blue: 0.968627451, alpha: 1), cellHeight: 10))
             }
                 
         case .programms:
                 
             header = HeaderLearnViewModel(title: "Программы", dateIsHidden: true)
             
-            (0...10).forEach { num in
-            cells.append(DocumentLearnTableViewModel(title: "Условия цапупкукит птумпцупуки vvvevregerbrbrbbrebrrbbrbav", date: "10.05.2018"))
-            }
+            cells = programmsArray
+            
             
         case .learning:
             
@@ -77,8 +89,6 @@ final class LearnDataProviderImp: LearnDataProvider {
         #warning("Добавить бек")
         var topCollectionCells: [CollectionViewCellModel] = []
         
-        //        cells.append(FeedTopCollectionViewModel()
-        
         topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Положения", isSelected: false, state: .provisions))
         topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Документы", isSelected: false, state: .document))
         topCollectionCells.append(TopCollectionViewCellModel(image: #imageLiteral(resourceName: "mts_logo"), text: "Программы", isSelected: false, state: .programms))
@@ -90,3 +100,8 @@ final class LearnDataProviderImp: LearnDataProvider {
     }
     
 }
+
+var programmsArray: [ProgrammsTableViewModel] = [
+    ProgrammsTableViewModel(title: "Sketch", image: #imageLiteral(resourceName: "sketch"), isOpen: true),
+    ProgrammsTableViewModel(title: "Miro", image: #imageLiteral(resourceName: "miror"), isOpen: false)
+]

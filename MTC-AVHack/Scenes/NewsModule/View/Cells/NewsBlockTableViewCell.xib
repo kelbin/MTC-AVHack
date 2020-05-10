@@ -52,11 +52,6 @@
                                     <constraint firstAttribute="trailing" secondItem="Da2-vM-tYy" secondAttribute="trailing" id="tft-fb-fA4"/>
                                     <constraint firstAttribute="trailing" secondItem="fH3-ct-8OF" secondAttribute="trailing" id="v0K-HW-q6S"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="11"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,6 +80,9 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomView" destination="lSl-gP-2I3" id="8Hb-uG-9p9"/>
+            </connections>
             <point key="canvasLocation" x="143.47826086956522" y="143.63839285714286"/>
         </tableViewCell>
     </objects>

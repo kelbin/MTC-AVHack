@@ -29,7 +29,7 @@ extension AuthorizeRouterImp: AuthorizeRouter {
         
         routerTransition = CustomTransitionRouter(viewController: viewController)
         
-        let navigation = UINavigationController(rootViewController: TabBarViewController())
+        let navigation = TabBarViewController()
         
         navigation.transitioningDelegate = routerTransition
         

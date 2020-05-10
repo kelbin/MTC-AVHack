@@ -10,15 +10,11 @@ import UIKit
 
 final class NewsBlockTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var bottomView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        bottomView.layer.addBorder(edge: .top, color: UIColor.lightText, thickness: 1)
     }
     
     func config(_ model: NewsBlockTableViewModel) {
