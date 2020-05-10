@@ -38,6 +38,7 @@ final class TopCollectionViewCell: UICollectionViewCell {
     func config(_ model: TopCollectionViewCellModel) {
         
         nameLabel.text = model.text
+        logoImageView.image = model.image
         
         switch model.isSelected {
         case true:

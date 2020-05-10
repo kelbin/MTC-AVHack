@@ -19,13 +19,14 @@ final class TabBarViewController: UITabBarController {
         let auth4 = UINavigationController(rootViewController: AuthorizeAssembly.build())
         let auth5 = UINavigationController(rootViewController: WriteUsAssembly.build())
         
-        auth.tabBarItem = UITabBarItem(title: "Новости", image: nil, selectedImage: nil)
-        auth2.tabBarItem = UITabBarItem(title: "Обучение", image: nil, selectedImage: nil)
-        auth3.tabBarItem = UITabBarItem(title: "Профиль", image: nil, selectedImage: nil)
-        auth4.tabBarItem = UITabBarItem(title: "Еще", image: nil, selectedImage: nil)
-        auth5.tabBarItem = UITabBarItem(title: "Спросить", image: nil, selectedImage: nil)
+        auth.tabBarItem = UITabBarItem(title: "Новости", image: #imageLiteral(resourceName: "firstItem"), selectedImage: nil)
+        auth2.tabBarItem = UITabBarItem(title: "Обучение", image: #imageLiteral(resourceName: "secondItem"), selectedImage: nil)
+        auth3.tabBarItem = UITabBarItem(title: "Профиль", image: #imageLiteral(resourceName: "thirdItem"), selectedImage: nil)
+        auth5.tabBarItem = UITabBarItem(title: "Спросить", image: #imageLiteral(resourceName: "fourthItem"), selectedImage: nil)
         
-        let tabBarList = [auth, auth2, auth5, auth3, auth4]
+        let tabBarList = [auth, auth2, auth5, auth3]
+        
+        self.tabBar.tintColor = #colorLiteral(red: 0.8862745098, green: 0.02352941176, blue: 0.07058823529, alpha: 1)
         
         viewControllers = tabBarList
     }

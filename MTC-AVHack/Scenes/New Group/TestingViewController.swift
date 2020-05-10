@@ -42,7 +42,7 @@ final class TestingViewController: UIViewController {
         dataSourceTableView.collection = tableView
         dataSourceTableView.tapDelegate = presenter
         
-        tableView.register(cellType: TestingBlockTableViewCell.self)
+        tableView.register(cellType: NewsBlockTableViewCell.self)
         tableView.register(cellType: SpacesTableViewCell.self)
     }
     
