@@ -128,6 +128,18 @@
 		4E8D78E62467FB9000853CF3 /* JDLayerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D786C2467FB9000853CF3 /* JDLayerClass.swift */; };
 		4E8D78E72467FB9000853CF3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D786D2467FB9000853CF3 /* TabBarViewController.swift */; };
 		4E8D78E82467FB9000853CF3 /* SpacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D786E2467FB9000853CF3 /* SpacesTableViewCell.swift */; };
+		4E8D78EB2467FD6700853CF3 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78E92467FD6700853CF3 /* TestingViewController.swift */; };
+		4E8D78EC2467FD6700853CF3 /* TestingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8D78EA2467FD6700853CF3 /* TestingViewController.xib */; };
+		4E8D78EF2467FD8F00853CF3 /* TestingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78EE2467FD8F00853CF3 /* TestingPresenter.swift */; };
+		4E8D78F12467FD9E00853CF3 /* TestingDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78F02467FD9E00853CF3 /* TestingDataProvider.swift */; };
+		4E8D78F32467FDAA00853CF3 /* TestingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78F22467FDAA00853CF3 /* TestingAssembly.swift */; };
+		4E8D78F52467FDBB00853CF3 /* TestingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78F42467FDBB00853CF3 /* TestingRouter.swift */; };
+		4E8D78F82467FEDC00853CF3 /* FirstPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78F62467FEDC00853CF3 /* FirstPageTableViewCell.swift */; };
+		4E8D78F92467FEDC00853CF3 /* FirstPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8D78F72467FEDC00853CF3 /* FirstPageTableViewCell.xib */; };
+		4E8D78FC2467FEED00853CF3 /* SecondPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78FA2467FEED00853CF3 /* SecondPageTableViewCell.swift */; };
+		4E8D78FD2467FEED00853CF3 /* SecondPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8D78FB2467FEED00853CF3 /* SecondPageTableViewCell.xib */; };
+		4E8D79002467FEFC00853CF3 /* ThirdPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8D78FE2467FEFC00853CF3 /* ThirdPageTableViewCell.swift */; };
+		4E8D79012467FEFC00853CF3 /* ThirdPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8D78FF2467FEFC00853CF3 /* ThirdPageTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -253,6 +265,18 @@
 		4E8D786C2467FB9000853CF3 /* JDLayerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDLayerClass.swift; sourceTree = "<group>"; };
 		4E8D786D2467FB9000853CF3 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4E8D786E2467FB9000853CF3 /* SpacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpacesTableViewCell.swift; sourceTree = "<group>"; };
+		4E8D78E92467FD6700853CF3 /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		4E8D78EA2467FD6700853CF3 /* TestingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestingViewController.xib; sourceTree = "<group>"; };
+		4E8D78EE2467FD8F00853CF3 /* TestingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingPresenter.swift; sourceTree = "<group>"; };
+		4E8D78F02467FD9E00853CF3 /* TestingDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingDataProvider.swift; sourceTree = "<group>"; };
+		4E8D78F22467FDAA00853CF3 /* TestingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAssembly.swift; sourceTree = "<group>"; };
+		4E8D78F42467FDBB00853CF3 /* TestingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingRouter.swift; sourceTree = "<group>"; };
+		4E8D78F62467FEDC00853CF3 /* FirstPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageTableViewCell.swift; sourceTree = "<group>"; };
+		4E8D78F72467FEDC00853CF3 /* FirstPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPageTableViewCell.xib; sourceTree = "<group>"; };
+		4E8D78FA2467FEED00853CF3 /* SecondPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageTableViewCell.swift; sourceTree = "<group>"; };
+		4E8D78FB2467FEED00853CF3 /* SecondPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondPageTableViewCell.xib; sourceTree = "<group>"; };
+		4E8D78FE2467FEFC00853CF3 /* ThirdPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageTableViewCell.swift; sourceTree = "<group>"; };
+		4E8D78FF2467FEFC00853CF3 /* ThirdPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdPageTableViewCell.xib; sourceTree = "<group>"; };
 		4ED223092465C980001257D5 /* MTC-AVHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTC-AVHack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -520,6 +544,18 @@
 		4E8D78232467FB9000853CF3 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				4E8D78E92467FD6700853CF3 /* TestingViewController.swift */,
+				4E8D78EA2467FD6700853CF3 /* TestingViewController.xib */,
+				4E8D78EE2467FD8F00853CF3 /* TestingPresenter.swift */,
+				4E8D78F02467FD9E00853CF3 /* TestingDataProvider.swift */,
+				4E8D78F22467FDAA00853CF3 /* TestingAssembly.swift */,
+				4E8D78F42467FDBB00853CF3 /* TestingRouter.swift */,
+				4E8D78F62467FEDC00853CF3 /* FirstPageTableViewCell.swift */,
+				4E8D78F72467FEDC00853CF3 /* FirstPageTableViewCell.xib */,
+				4E8D78FA2467FEED00853CF3 /* SecondPageTableViewCell.swift */,
+				4E8D78FB2467FEED00853CF3 /* SecondPageTableViewCell.xib */,
+				4E8D78FE2467FEFC00853CF3 /* ThirdPageTableViewCell.swift */,
+				4E8D78FF2467FEFC00853CF3 /* ThirdPageTableViewCell.xib */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -819,8 +855,10 @@
 				4E8D78742467FB9000853CF3 /* AttachedTableViewCell.xib in Resources */,
 				4E8D789F2467FB9000853CF3 /* ProfileViewController.xib in Resources */,
 				4E8D78AA2467FB9000853CF3 /* ImageTableViewCell.xib in Resources */,
+				4E8D78EC2467FD6700853CF3 /* TestingViewController.xib in Resources */,
 				4E8D78A62467FB9000853CF3 /* DescriptionTableViewCell.xib in Resources */,
 				4E8D78C12467FB9000853CF3 /* NewDeviceDescriptionCell.xib in Resources */,
+				4E8D78FD2467FEED00853CF3 /* SecondPageTableViewCell.xib in Resources */,
 				4E8D78802467FB9000853CF3 /* LearnViewController.xib in Resources */,
 				4E8D78AD2467FB9000853CF3 /* TextFieldTableViewCell.xib in Resources */,
 				4E8D78BF2467FB9000853CF3 /* HeaderImageTableViewCell.xib in Resources */,
@@ -832,6 +870,7 @@
 				4E8D78C62467FB9000853CF3 /* NewsBlockTableViewCell.xib in Resources */,
 				4E8D78992467FB9000853CF3 /* HeaderProfileTableViewCell.xib in Resources */,
 				4E8D78A72467FB9000853CF3 /* ButtonTableViewCell.xib in Resources */,
+				4E8D78F92467FEDC00853CF3 /* FirstPageTableViewCell.xib in Resources */,
 				4E8D78972467FB9000853CF3 /* TraineTableViewCell.xib in Resources */,
 				4E8D78DB2467FB9000853CF3 /* LaunchScreen.storyboard in Resources */,
 				4E8D78DA2467FB9000853CF3 /* Assets.xcassets in Resources */,
@@ -839,6 +878,7 @@
 				4E8D78762467FB9000853CF3 /* ProgrammsTableViewCell.xib in Resources */,
 				4E8D78752467FB9000853CF3 /* DocumentLearnTableViewCell.xib in Resources */,
 				4E8D78892467FB9000853CF3 /* WriteUsViewController.xib in Resources */,
+				4E8D79012467FEFC00853CF3 /* ThirdPageTableViewCell.xib in Resources */,
 				4E8D787B2467FB9000853CF3 /* HeaderLearnTableViewCell.xib in Resources */,
 				4E8D787D2467FB9000853CF3 /* HeaderLearnView.xib in Resources */,
 				4E8D789B2467FB9000853CF3 /* TopCollectionTableViewCell.xib in Resources */,
@@ -857,6 +897,7 @@
 				4E8D788D2467FB9000853CF3 /* ProfilePresenter.swift in Sources */,
 				4E8D788C2467FB9000853CF3 /* WriteUsPresenter.swift in Sources */,
 				4E8D78A32467FB9000853CF3 /* AuthorizeInteractor.swift in Sources */,
+				4E8D78EF2467FD8F00853CF3 /* TestingPresenter.swift in Sources */,
 				4E8D78982467FB9000853CF3 /* TraineeTableViewCellModel.swift in Sources */,
 				4E8D78D32467FB9000853CF3 /* ParameterEncoding.swift in Sources */,
 				4E8D78A52467FB9000853CF3 /* AuthorizeRouter.swift in Sources */,
@@ -866,12 +907,15 @@
 				4E8D786F2467FB9000853CF3 /* LearnService.swift in Sources */,
 				4E8D78912467FB9000853CF3 /* ProfileService.swift in Sources */,
 				4E8D78D22467FB9000853CF3 /* Result.swift in Sources */,
+				4E8D78F32467FDAA00853CF3 /* TestingAssembly.swift in Sources */,
 				4E8D788B2467FB9000853CF3 /* WriteUsService.swift in Sources */,
 				4E8D78B72467FB9000853CF3 /* NewsPresenter.swift in Sources */,
+				4E8D78FC2467FEED00853CF3 /* SecondPageTableViewCell.swift in Sources */,
 				4E8D787C2467FB9000853CF3 /* HeaderLearnTableViewCell.swift in Sources */,
 				4E8D78D92467FB9000853CF3 /* Protocols.swift in Sources */,
 				4E8D78D42467FB9000853CF3 /* RequestBuilder.swift in Sources */,
 				4E8D78852467FB9000853CF3 /* WriteUsAssembly.swift in Sources */,
+				4E8D78F12467FD9E00853CF3 /* TestingDataProvider.swift in Sources */,
 				4E8D78902467FB9000853CF3 /* ProfileDataProvider.swift in Sources */,
 				4E8D78CF2467FB9000853CF3 /* Parameters.swift in Sources */,
 				4E8D78C82467FB9000853CF3 /* NewsViewController.swift in Sources */,
@@ -902,6 +946,7 @@
 				4E8D787A2467FB9000853CF3 /* HeaderLernView.swift in Sources */,
 				4E8D78832467FB9000853CF3 /* WriteUsDataProvider.swift in Sources */,
 				4E8D78812467FB9000853CF3 /* LearnViewController.swift in Sources */,
+				4E8D79002467FEFC00853CF3 /* ThirdPageTableViewCell.swift in Sources */,
 				4E8D78AF2467FB9000853CF3 /* ButtonTableViewCell.swift in Sources */,
 				4E8D78D12467FB9000853CF3 /* SessionStorage.swift in Sources */,
 				4E8D78BA2467FB9000853CF3 /* DetailNewsPresenter.swift in Sources */,
@@ -913,6 +958,7 @@
 				4E8D788F2467FB9000853CF3 /* ProfileAssembly.swift in Sources */,
 				4E8D78CE2467FB9000853CF3 /* NetworkClient.swift in Sources */,
 				4E8D78E72467FB9000853CF3 /* TabBarViewController.swift in Sources */,
+				4E8D78EB2467FD6700853CF3 /* TestingViewController.swift in Sources */,
 				4E8D78D82467FB9000853CF3 /* ViewState.swift in Sources */,
 				4E8D78782467FB9000853CF3 /* ProgrammsTableViewCell.swift in Sources */,
 				4E8D78732467FB9000853CF3 /* LearnPresenter.swift in Sources */,
@@ -927,6 +973,7 @@
 				4E8D78BD2467FB9000853CF3 /* DetailNewsInteractor.swift in Sources */,
 				4E8D78BC2467FB9000853CF3 /* DetailNewsRouter.swift in Sources */,
 				4E8D78E32467FB9000853CF3 /* ServiceUtils.swift in Sources */,
+				4E8D78F52467FDBB00853CF3 /* TestingRouter.swift in Sources */,
 				4E8D78D72467FB9000853CF3 /* AppDelegate.swift in Sources */,
 				4E8D78B52467FB9000853CF3 /* NewsDataProvider.swift in Sources */,
 				4E8D78B42467FB9000853CF3 /* NewsInteractor.swift in Sources */,
@@ -935,6 +982,7 @@
 				4E8D78A42467FB9000853CF3 /* AuthorizeDataProvider.swift in Sources */,
 				4E8D78A92467FB9000853CF3 /* ImageTableViewCell.swift in Sources */,
 				4E8D78882467FB9000853CF3 /* WriteUsViewController.swift in Sources */,
+				4E8D78F82467FEDC00853CF3 /* FirstPageTableViewCell.swift in Sources */,
 				4E8D787F2467FB9000853CF3 /* TopCollectionViewCell.swift in Sources */,
 				4E8D789E2467FB9000853CF3 /* CircularProgressTableViewCell.swift in Sources */,
 				4E8D78A02467FB9000853CF3 /* ProfileViewController.swift in Sources */,
