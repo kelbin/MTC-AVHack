@@ -22,8 +22,10 @@ final class ProfilePresenterImp {
     
     unowned var view: ProfileViewInput!
     
+    
     var router: ProfileRouter!
     var dataProvider: ProfileDataProvider!
+    var adviserDataProvider: AdviserProfileDataProviderImp = AdviserProfileDataProviderImp()
     
     init() { }
 }
@@ -32,10 +34,17 @@ final class ProfilePresenterImp {
 extension ProfilePresenterImp: ProfilePresenterInput {
     
     func didTap() {
-        router?.goToNextScreen()
+        //router?.goToNextScreen()
+        router?.goToDevices()
     }
     
     func viewDidLoad() {
+        
+        if globalUser.isAdviser {
+            let tableModel = adviserDataProvider.getDataToTable()
+            view.updateTableModel(model: tableModel)
+            return;
+        }
         
         let tableModel = dataProvider.getDataToTable()
         

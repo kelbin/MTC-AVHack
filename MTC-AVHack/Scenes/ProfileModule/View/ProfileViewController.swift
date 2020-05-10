@@ -57,8 +57,9 @@ final class ProfileViewController: UIViewController {
         tableView.register(cellType: CircularProgressTableViewCell.self)
         tableView.register(cellType: ButtonTableViewCell.self)
         tableView.register(cellType: SpacesTableViewCell.self)
+        tableView.register(cellType: TraineTableViewCell.self)
+        tableView.register(cellType: TraineeDetailsViewCell.self)
     }
-    
 }
 
 extension ProfileViewController: ProfileViewInput {

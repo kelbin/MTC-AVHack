@@ -10,6 +10,7 @@ import UIKit
 
 protocol ProfileRouter {
     func goToNextScreen()
+    func goToDevices()
 }
 
 final class ProfileRouterImp {
@@ -34,6 +35,14 @@ extension ProfileRouterImp: ProfileRouter {
         navigation.transitioningDelegate = routerTransition
         
         viewController.present(navigation, animated: true, completion: nil)
+    }
+    
+    func goToDevices() {
+        routerTransition = CustomTransitionRouter(viewController: viewController)
+        
+        let vc = DeviceAssembly.build()
+        
+        viewController.present(vc, animated: true, completion: nil)
     }
     
 }

@@ -53,3 +53,13 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+struct mockedUser {
+    var fullname: String = "Богдарева Ирина Олеговна"
+    var job: String = "Продуктовый дизайнер"
+    var isAdviser: Bool = true
+}
+
+
+let globalUser = mockedUser()
+
